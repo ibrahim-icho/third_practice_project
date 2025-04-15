@@ -1,0 +1,28 @@
+name: Deploying The project 
+on: [push, workflow_dispatch]
+jobs:
+  Lint:
+   runs-on: ubuntu_latest
+   steps:
+    - name: Checkout the code 
+      uses: actions/checkout@v4
+    - name: install dependencies 
+      run: npm install 
+    - name: lint the code 
+      run: npm run lint 
+    - name: build the code 
+      run: npm run build 
+    - name: Test the code 
+      run: npm run test 
+    - name: Deployin the project 
+      run: echo "The project was deployed succesfuly "
+
+
+
+
+
+
+
+
+
+
