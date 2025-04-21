@@ -7,6 +7,8 @@ import MainContent from './MainContent';
 
 // My tests ! 
 // Add yet another comment 
+// another two tests to re run 
+// it was just wonderful meeting you 
 describe('MainContent', () => {
   it('should render a button', () => {
     render(<MainContent />);
